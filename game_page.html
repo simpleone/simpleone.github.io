@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SimpleOne Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+		<!-- <link rel="stylesheet" type="text/css" href="css/common.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style_profile.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Prata' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.26887.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/game_aviator_style.css" />
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/game_aviator.js" /></script>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">SimpleOne Game</a>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll" href="#game_avivator">The Aviator</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#">Prism Effect</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#">Drum Band</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-7">
+                  <div class="header-content">
+                      <div class="header-content-inner">
+                          <h1>“A bird sitting on a tree is never afraid of the branch breaking, because her trust is not on the branch but on it’s own wings. Always believe in yourself!”</h1>
+                          <a href="#download" class="btn btn-outline btn-xl page-scroll">Go here!</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-5">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                      <ul class="ch-grid">
+                        <li>
+                          <div class="ch-item">
+                            <div class="ch-info-wrap">
+                              <div class="ch-info">
+                                <div class="ch-info-front ch-img"></div>
+                                <div class="ch-info-back">
+                                  <h3>LANH NGUYEN</h3>
+                                  <p> student at Bach Khoa University <a href="https://www.facebook.com/lanh.nguyen.2580">View on Facebook</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <section id="game_avivator">
+      <div class="game-holder" id="gameHolder">
+      			<div class="header">
+      				<h1><span>the</span>Aviator</h1>
+      				<h2>fly it to the end</h2>
+      				<div class="score" id="score">
+      					<div class="score__content" id="level">
+      						<div class="score__label">level</div>
+      						<div class="score__value score__value--level" id="levelValue">1</div>
+      						<svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+      							<circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790" stroke-width="24px" />
+      							<circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
+      						</svg>
+      					</div>
+      					<div class="score__content" id="dist">
+      						<div class="score__label">distance</div>
+      						<div class="score__value score__value--dist" id="distValue">000</div>
+      					</div>
+      					<div class="score__content" id="energy">
+      						<div class="score__label">energy</div>
+      						<div class="score__value score__value--energy" id="energyValue">
+      							<div class="energy-bar" id="energyBar"></div>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      			<div class="world" id="world"></div>
+      			<div class="message message--replay" id="replayMessage">Click to Replay</div>
+            <a href="#" class="btn btn-outline btn-xl page-scroll">Click to Replay</a>
+      			<div class="message message--instructions" id="instructions">Grab the blue pills<span>avoid the red ones</span></div>
+      		</div>
+  </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.imgslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$( '#fs-slider' ).imgslider();
+
+			});
+		</script>
+
+</body>
+
+</html>
